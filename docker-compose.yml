@@ -10,6 +10,7 @@ services:
     ports:
       - 6322:8080
     environment:
+      - TZ=America/Bogota
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:8080
   pirawash-front:
