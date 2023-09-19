@@ -208,7 +208,6 @@
 
     // Add navbar shadow on scroll
     $(window).scroll(function() {
-        // console.log($(window).scrollTop());
         if ($(window).scrollTop() > 60) {
             $('.header-navbar').addClass('navbar-shadow');
             $('.header-navbar').css('opacity', '0.97');

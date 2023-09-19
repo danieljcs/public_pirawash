@@ -1,6 +1,5 @@
 
 function loadScript() {
-  console.log('RAWWWWW')
   // document.addEventListener('DOMContentLoaded', function () {
       let container = document.querySelector(".tabs");
       let buttons = container.querySelectorAll(".tabs__button");
@@ -18,7 +17,6 @@ function loadScript() {
             element !== activeBtn ? "false" : "true");
             var tab = $(element).attr('aria-controls');
             if(element == activeBtn){
-            console.log($(element).attr('aria-controls'))
             $(".show").removeClass("show");
             $(".active").removeClass("active");
             document.getElementById(tab).classList.add('show')
