@@ -19,4 +19,4 @@ services:
     container_name: pirawash_front
     restart: always
     ports:
-      - 80:80
+      - 6321:80
