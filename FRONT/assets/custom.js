@@ -1,3 +1,11 @@
+window.onload = function(){
+
+  console.log("El DOM ha sido cargado completamente. Ahora ejecuto el último script.");
+  // Agrega aquí el código de tu último script
+  document.body.classList.add("menu-open","vertical-overlay-menu");
+
+};
+
 function openClose(){
   console.log('RAWTEST')
   if (document.body.classList.contains("menu-hide")) {
