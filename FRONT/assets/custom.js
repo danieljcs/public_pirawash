@@ -1,26 +1,21 @@
-window.onload = function(){
-
-  console.log("El DOM ha sido cargado completamente. Ahora ejecuto el último script.");
-  // Agrega aquí el código de tu último script
-  document.body.classList.add("menu-hide");
-
-};
 
 
 function openClose(){
-  alert('RAWTEST')
-  alert(document.body.classList)
+
+  if(!document.body.classList.contains("menu-hide") && !document.body.classList.contains("menu-hide")){
+    document.body.classList.add("menu-hide");
+  }
+  if(document.body.classList.contains("vertical-compact-menu")){
+    document.body.classList.remove("vertical-compact-menu");
+    document.body.classList.add("vertical-overlay-menu");
+
+  }
+
   if (document.body.classList.contains("menu-hide")) {
-    // Si la tiene, removerla
     document.body.classList.remove("menu-hide");
     document.body.classList.add("menu-open");
-    document.body.classList.add("vertical-overlay-menu");
-    console.log("r1")
   }else {
-    // Si la tiene, removerla
     document.body.classList.remove("menu-open");
     document.body.classList.add("menu-hide");
-    document.body.classList.add("vertical-overlay-menu");
-    console.log("r2")
   }
 }
