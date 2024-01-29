@@ -1,10 +1,10 @@
-// window.onload = function(){
+window.onload = function(){
 
-//   console.log("El DOM ha sido cargado completamente. Ahora ejecuto el último script.");
-//   // Agrega aquí el código de tu último script
-//   document.body.classList.add("menu-open","vertical-overlay-menu");
+  console.log("El DOM ha sido cargado completamente. Ahora ejecuto el último script.");
+  // Agrega aquí el código de tu último script
+  document.body.classList.add("menu-hide");
 
-// };
+};
 
 
 function openClose(){
@@ -14,11 +14,13 @@ function openClose(){
     // Si la tiene, removerla
     document.body.classList.remove("menu-hide");
     document.body.classList.add("menu-open");
+    document.body.classList.add("vertical-overlay-menu");
     console.log("r1")
   }else {
     // Si la tiene, removerla
     document.body.classList.remove("menu-open");
     document.body.classList.add("menu-hide");
+    document.body.classList.add("vertical-overlay-menu");
     console.log("r2")
   }
 }
