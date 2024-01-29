@@ -8,7 +8,7 @@ window.onload = function(){
 
 
 function openClose(){
-  console.log('RAWTEST')
+  alert('RAWTEST')
   if (document.body.classList.contains("menu-hide")) {
     // Si la tiene, removerla
     document.body.classList.remove("menu-hide");
