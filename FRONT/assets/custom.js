@@ -6,6 +6,7 @@ window.onload = function(){
 
 };
 
+
 function openClose(){
   console.log('RAWTEST')
   if (document.body.classList.contains("menu-hide")) {
